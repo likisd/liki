@@ -18,7 +18,7 @@ yesOption.addEventListener('click', () => {
     from: 'likithlikithsd@gmail.com',
     to: 'likithlikithsd@gmail.com',
     subject: 'Vaishnavi said YES!',
-    text: 'Vaishnavi has accepted your date invitation!'
+    text: 'Vaishnavi has agreed to talk to you!'
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -27,6 +27,7 @@ yesOption.addEventListener('click', () => {
       console.log('Email sent: ' + info.response);
     }
   });
+  alert('Thank you, Vaishnavi! I love you!');
 });
 
 noOption.addEventListener('click', (e) => {
@@ -38,7 +39,7 @@ noOption.addEventListener('click', (e) => {
     from: 'likithlikithsd@gmail.com',
     to: 'likithlikithsd@gmail.com',
     subject: 'Vaishnavi said NO!',
-    text: 'Vaishnavi has declined your date invitation!'
+    text: 'Vaishnavi needs more space.'
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -47,4 +48,5 @@ noOption.addEventListener('click', (e) => {
       console.log('Email sent: ' + info.response);
     }
   });
+  alert('I understand, Vaishnavi. I\'ll give you space.');
 });
