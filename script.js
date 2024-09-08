@@ -8,14 +8,14 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // or 'STARTTLS'
   auth: {
-    user: 'your-email@gmail.com',
-    pass: 'your-password'
+    user: 'likithlikithsd@gmail.com',
+    pass: '9880458977'
   }
 });
 
 yesOption.addEventListener('click', () => {
   const mailOptions = {
-    from: 'your-email@gmail.com',
+    from: 'likithlikithsd@gmail.com',
     to: 'likithlikithsd@gmail.com',
     subject: 'Vaishnavi said YES!',
     text: 'Vaishnavi has accepted your date invitation!'
@@ -35,7 +35,7 @@ noOption.addEventListener('click', (e) => {
   noOption.style.left = `${Math.random() * window.innerWidth}px`;
   
   const mailOptions = {
-    from: 'your-email@gmail.com',
+    from: 'likithlikithsd@gmail.com',
     to: 'likithlikithsd@gmail.com',
     subject: 'Vaishnavi said NO!',
     text: 'Vaishnavi has declined your date invitation!'
